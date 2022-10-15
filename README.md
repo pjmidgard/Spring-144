@@ -1,6 +1,17 @@
 # Spring-144
 Spring-144
 
+
+pip install cython 
+
+pip install paq
+
+or
+
+python -m pip install cython
+
+python -m pip install paq
+
 Algorithm Spring-143 and paq9a
 
 Algorithm Spring-143
