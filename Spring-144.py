@@ -409,13 +409,15 @@ class encypthion_class:
                                         times10=0
                                         
                                                                 
-                                    elif limit==1 and smaller==0:
+                                    elif limit==1 and smaller==0 and  times10!=0:
+                                    
+                                        
                                         size_data14="00010000"+size_data3
                                         #print(size_data14)
                                         
                                         times10-=1
                                         
-                                    elif smaller==0 and limit==0:
+                                    elif smaller==0 and limit==0 or times10==0:
                                          size_data14="00000000"+encypthion
                                          
                                     #print(times10)
