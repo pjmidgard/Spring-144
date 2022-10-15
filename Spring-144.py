@@ -1,7 +1,6 @@
-#Spring-144 
+#Spring-143
 
-#Algorithm Spring-143 and paq9a
-#Algorithm Spring-143
+#Algorithm Spring-143:
 
 #We should take 64 bits and find two the same #variations for 32-64 bits long and 0-64 bit, then, #save where it is a 3 bits variation, 8 combination #and 4 bits variation, 16 combination. Add one bit #next and try to find again if not find that block it's #compress and find variation should be random.
 
@@ -688,21 +687,25 @@ class encypthion_class:
 
                                     elif size_data3[:8]=="11111110":
                                         Extract_file=0
+                                        
+                                    #print(Times_count)
 
                                     size_data3=size_data3[8:]
                                         
 
-                                    Times10=0                                           
-                                    Caculus_oct3=size_data3[:4]
-                                    size_data3=size_data3[4:]
+                                    Times10=0  
+                                    
+                                    if Times_count!=0:                                                                               
+                                        Caculus_oct3=size_data3[:4]
+                                        size_data3=size_data3[4:]
 
                                     
 
                                     
                                     Count_add_block2=""
-                                    if Extract_file==0:
+                                    if Extract_file==0 or Times_count==0:
                                         Count_add_block2=size_data3
-                                    if Extract_file==1:
+                                    elif Extract_file==1 and Times_count>0:
                                         while Times_count!=Times10:
                                             
  
@@ -828,7 +831,7 @@ class encypthion_class:
                                             Times10+=1                                    
                                     
                                    
-                                    size_data3=Count_add_block2
+                                    
 
                                     
                                       
