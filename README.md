@@ -1,8 +1,6 @@
 # Spring-144
 Spring-144
 
-#Spring-144 
-
 Algorithm Spring-143 and paq9a
 
 Algorithm Spring-143
