@@ -213,7 +213,7 @@ class encypthion_class:
                                     limit=0
                                    
                                     
-                                    while limit!=1:
+                                    while times10!=1:
                                       
                                     
                                         size_data3=info_hex
@@ -341,11 +341,11 @@ class encypthion_class:
                                                                       
                                                                             
                                                                              
-                                                                if limit_find==1 or l!=64 or res_one_time==1:
+                                                                if limit_find==1 or l!=64:
                                                                    after_block=Calculus
                                                                               
                                                                                  
-                                                                elif limit_find==0 and l==64 and res_one_time==0:
+                                                                elif limit_find==0 and l==64:
                                                                    after_block=res64
                                                                    res_one_time=1
                                                                    block+=1
@@ -382,8 +382,7 @@ class encypthion_class:
                                             
                                         
                                         times10+=1
-                                        if res_one_time==0:
-                                            limit=1
+                                       
                                             
                                         info_hex=res 
                                         long_after_compression=len(info_hex)
@@ -452,8 +451,8 @@ class encypthion_class:
                                     long21=len(size_data12)
 
                                     
-                                    if long21<lenf2-7:
-                                        limit1=1
+                                    
+                                limit1=1
                                 
                                 
                                     
@@ -762,9 +761,9 @@ class encypthion_class:
                                                     
                                                     if res5==0:
                                                         #print(res5)
-                                                        if res_one_time==1:
+                                                        if long2!=64:
                                                             Count_add_block+=Calculus
-                                                        if res_one_time==0:
+                                                        if long2==64:
                                                           
                                                           
                                                             
