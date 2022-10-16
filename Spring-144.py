@@ -1,10 +1,3 @@
-#Spring-144
-
-
-#Algorithm Spring-144
-
-#We should take 64 bits and find two the same #variations for 32-64 bits long and 0-64 bit, then, #save where it is a 3 bits variation, 8 combination #and 4 bits variation, 16 combination. Add one bit #next and try to find again if not find that block it's #compress  find variation should be random.
-
 from time import time
 cvf=0
 import os
@@ -342,11 +335,11 @@ class encypthion_class:
                                                                       
                                                                             
                                                                              
-                                                                if limit_find==1 or l!=64:
+                                                                if limit_find==0 or l!=64:
                                                                    after_block=Calculus
                                                                               
                                                                                  
-                                                                elif limit_find==0 and l==64:
+                                                                elif limit_find==1 and l==64:
                                                                    after_block=res64
                                                                    res_one_time=1
                                                                    block+=1
@@ -760,7 +753,7 @@ class encypthion_class:
                                                                                                                             
                                                                 
                                                     
-                                                    if res5==0:
+                                                    if res5==1:
                                                         #print(res5)
                                                         if long2!=64:
                                                             Count_add_block+=Calculus
@@ -815,7 +808,7 @@ class encypthion_class:
                                                             
                                                             
 
-                                                    if res5==1:
+                                                    if res5==0:
                                                         Count_add_block+=Calculus
                                                         
                                                             
