@@ -212,7 +212,7 @@ class encypthion_class:
                                     limit=0
                                    
                                     
-                                    while times10!=1:
+                                    while limit!=1:
                                       
                                     
                                         size_data3=info_hex
