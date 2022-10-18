@@ -298,7 +298,7 @@ class encypthion_class:
                                                             res5=1
                                                             
                                                             
-                                                            if Calculus[Times:Times+4]==Caculus_oct3:
+                                                            if Calculus[:4]==Caculus_oct3:
                                
                                                                    after_block=res7+Calculus8
                                                                    
@@ -316,6 +316,12 @@ class encypthion_class:
                                                     
                                                 elif res5==0:
                                                    res+=Calculus
+                                                   
+                                                   Calculus_A=int(Calculus[0:3],2)
+                                                   Calculus_A+=3
+                                                   if Calculus[Calculus_A:Calculus_A+4]==Caculus_oct3:
+                                                       limit=1
+                                                       
                                                 
                                                     
                                                 resf+=1
@@ -682,94 +688,62 @@ class encypthion_class:
                                             while block<long:
                                                  Calculus=size_data3[block:block+blocks]
                                                  
-                                                 block=block+blocks
-                                                 times_compress+=1
-                                                 file=0
-                                                    
-                                                 if file==0:
-                                                            
-                                                    long2=len(Calculus)
-                                                    #print(long2)
-                                                    block2=0
-                                                    blocks2=0
-                                                    Times=28
-                                                    Times2=-4
-                                                    res1=0
-                                                    res2=0
-                                                    res5=0
-                                                    limit_find=0
-                                                        
-                                                    while Times2!=60:
-                                                        Times2+=4
-                                                        Times=28
-                                                        #print(Times2)
-                                                        while Times!=60:
-                                                            Times+=4
-                                                            #print(Times)
-                                                            block2=0
-                    
-                                                            if Calculus[Times:Times+4]==Calculus[Times2:Times2+4] and res1==0 and Times!=Times2 and Times2<=60 and long2==64:
-                                                                res5=1
-                                                                                                                            
-                                                                
-                                                    
-                                                    if res5==0:
-                                                        #print(res5)
-                                                        if long2!=64:
-                                                            Count_add_block+=Calculus
-                                                        if long2==64:
+                                                 
                                                           
-                                                          
-                                                            
-                                                            
-                                                            OCT1=Calculus[0:3]
-                                                           
-                                                            OCT2=Calculus[3:7]
-                                                            OCT3="1"+OCT1
-                                                            
-                                                            OCT1_number=int(OCT3,2)
-                                                            OCT2_number=int(OCT2,2)
-
-                                                            
-
-                                                            add_block=""
-                                                            add_block1=""
-                                                            
-                                                            
-                                                                                                                                                                    
-                                                            if OCT1_number==OCT2_number:
-                                                                Count_add_block+=Calculus                                                               
-                                                            if OCT1_number<OCT2_number:
-                                                                res_one_time=1
-                                                                OCT1_number_4=(OCT1_number*4)+7
-                                                                OCT2_number_4=OCT2_number*4
-
-                                                                add_block=Calculus[7:OCT1_number_4]+Caculus_oct3+Calculus[OCT1_number_4:]
-                                                                add_block1=add_block[:OCT2_number_4]+Caculus_oct3+add_block[OCT2_number_4:]
-                                                                Count_add_block+=add_block1
+                                                            Calculus_A=int(Calculus[0:3],2)
+                                                            Calculus_A+=3
+                                                            if Calculus[Calculus_A:Calculus_A+4]!=Caculus_oct3:
+                                                                Count_add_block+=Calculus
                                                                 
-                                                            if OCT2_number<OCT1_number:
-                                                                res_one_time=1
-                                                                
-                                                                OCT1_number_4=OCT1_number*4
-                                                                OCT2_number_4=(OCT2_number*4)+7
-                                                                
-                                                                
-                                                                add_block=Calculus[7:OCT2_number_4]+Caculus_oct3+Calculus[OCT2_number_4:]
-                                                                add_block1=add_block[:OCT1_number_4]+Caculus_oct3+add_block[OCT1_number_4:]
-                                                                Count_add_block+=add_block1
+                                                            if Calculus[Calculus_A:Calculus_A+4]==Caculus_oct3:
+                                                            
                                                             
                                                                 
-                                                            #print(len(add_block1))
+                                                               
+                                                                OCT2=Calculus[0:3]
+                                                                OCT3="0"+"000"
+                                                                
+                                                                OCT1_number=int(OCT3,2)
+                                                                OCT2_number=int(OCT2,2)
+
+                                                                
+
+                                                                add_block=""
+                                                                add_block1=""
+                                                                
+                                                                
+                                                                                                                                                                        
+                                                                if OCT1_number==OCT2_number:
+                                                                    Count_add_block+=Calculus                                                               
+                                                                if OCT1_number<OCT2_number:
+                                                                    
+                                                                    OCT1_number_4=(OCT1_number*4)+3
+                                                                    OCT2_number_4=OCT2_number*4
+
+                                                                    add_block=Calculus[3:OCT1_number_4]+Caculus_oct3+Calculus[OCT1_number_4:]
+                                                                    add_block1=add_block[:OCT2_number_4]+Caculus_oct3+add_block[OCT2_number_4:]
+                                                                    Count_add_block+=add_block1
+                                                                    
+                                                                if OCT2_number<OCT1_number:
+                                                                    
+                                                                    
+                                                                    OCT1_number_4=OCT1_number*4
+                                                                    OCT2_number_4=(OCT2_number*4)+3
+                                                                    
+                                                                    
+                                                                    add_block=Calculus[3:OCT2_number_4]+Caculus_oct3+Calculus[OCT2_number_4:]
+                                                                    add_block1=add_block[:OCT1_number_4]+Caculus_oct3+add_block[OCT1_number_4:]
+                                                                    Count_add_block+=add_block1
+                                                                
+                                                                    
+                                                                #print(len(add_block1))
+                                                                
+
+                                                                add_block1=""
+                                                                add_block=""
+                                                                
                                                             
 
-                                                            add_block1=""
-                                                            add_block=""
-                                                            
-                                                            
-
-                                                    if res5==1:
-                                                        Count_add_block+=Calculus
                                                         
                                                             
                                                             
