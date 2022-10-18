@@ -262,25 +262,24 @@ class encypthion_class:
                                                 res5=0
                                                 limit_find=0
                                                 
-                                                while Times2!=60:
+                                                while Times2!=28:
                                                     Times2+=4
-                                                    Times=28
+                                                    Times=-4
                                                     #print(Times2)
                                                     while Times!=28:
                                                         Times+=4
                                                         #print(Times)
                                                         block2=0
             
-                                                        if Calculus[Times:Times+4]==Calculus[Times2:Times2+4] and res1==0 and Times!=Times2 and Times2<=60 and long2==64:
-                                                            Caculus_oct=format(Times//4,'04b')
+                                                        if Calculus[0:4]==Calculus[Times2:Times2+4] and res1==0 and Times!=Times2 and Times2<=60 and long2==64:
+                                                            Caculus_oct=format(Times//4,'03b')
                                                             
                                                             C=0
                         
                         
-                                                            if Caculus_oct[0:1]=="1":
-                                                                C=1
+                                                            i
                                                             
-                                                            Caculus_oct=Caculus_oct[1:]
+                                                            Caculus_oct=Caculus_oct
                                                          
                                                             Caculus_oct2=format(Times2//4,'03b')
                                                            
@@ -289,60 +288,20 @@ class encypthion_class:
                                                             
                                                            
                                                             if Times<Times2:
-                                                                res7=Caculus_oct+Caculus_oct2+Calculus[:Times]+Calculus[Times+4:Times2]+Calculus[Times2+4:]
+                                                                res7=Caculus_oct2+Calculus[:Times]+Calculus[Times+4:Times2]+Calculus[Times2:]
                                                                 
                                                                 
-                                                            if Times2<Times:
-                                                                res7=Caculus_oct+Caculus_oct2+Calculus[:Times2]+Calculus[Times2+4:Times]+Calculus[Times+4:]
-                                                            #print(Times)
-                                                            #print(Times2)
-                                                            #print(len(res7))
+                                                        
                                                             res1=1
                                                             res2=0
                                                             
                                                             res5=1
                                                             
                                                             
-                                                            if Calculus[Times:Times+4]==Caculus_oct3 and C==1:
-                                                                res64=res7+Calculus8
-                                                                l=len(res64)
-                                                               
-                                                                    
-                                                                Times3=-4
-                                                                Times4=-4
-                                                               
-                                                                limit_find=0
-                                                                
-                                                                
-                                                                while Times4!=60:
-                                                                    Times4+=4
-                                                                    Times3=28
-                                                                    #print(Times2)
-                                                                    while Times3!=60:
-                                                                        Times3+=4
-                                                                        #print(Times)
-                                                                        block2=0
-                                                                       
-                            
-                                                                        if res64[Times3:Times3+4]==res64[Times4:Times4+4] and Times3!=Times4 and Times4<=60 and res2==0 and l==64:
-                                                                            
-                                                                            after_block=Calculus
-                                                                            limit_find=1
-                                                                            res2=1
-                                                                            
-                                                                            
-                                                                            
-                                                                      
-                                                                            
-                                                                             
-                                                                if limit_find==1 or l!=64:
-                                                                   after_block=Calculus
-                                                                              
-                                                                                 
-                                                                elif limit_find==0 and l==64:
-                                                                   after_block=res64
-                                                                   res_one_time=1
-                                                                   block+=1
+                                                            if Calculus[Times:Times+4]==Caculus_oct3:
+                               
+                                                                   after_block=res7+Calculus8
+                                                                   
                                                                              
                                                                              
                                                             else:
