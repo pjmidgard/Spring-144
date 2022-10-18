@@ -288,7 +288,7 @@ class encypthion_class:
                                                             
                                                            
                                                             if Times<Times2:
-                                                                res7=Caculus_oct2+Calculus[:Times]+Calculus[Times+4:Times2]+Calculus[Times2:]
+                                                                res7=Caculus_oct2+Calculus[4:Times2]+Calculus[Times2:]
                                                                 
                                                                 
                                                         
